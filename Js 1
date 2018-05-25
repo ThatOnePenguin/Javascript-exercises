@@ -1,0 +1,28 @@
+/*
+
+Fahrenheit and centigrade are two temperature scales in use today.  
+The Fahrenheit scale was developed by the German physicist Daniel  Gabriel Fahrenheit . 
+In the Fahrenheit scale, water freezes at 32  degrees and boils at 212 degrees. 
+
+The centigrade scale, which is also called the Celsius scale, was  developed by Swedish astronomer Andres Celsius. 
+In the centigrade scale,  water freezes at 0 degrees and boils at 100 degrees. 
+
+
+*/
+function cToF(celsius) {
+  // this is celsius to Fahrenheit
+    var f = (celsius * 1.8) + 32;
+    console.log(celsius+'\xB0c'+' is '+f+'\xB0f');
+
+  
+
+}
+
+function fToC(fahrenheit) {
+  // this is Fahrenheit to Celsius
+    var c = (5/9) * (fahrenheit - 32);
+    console.log(fahrenheit+'\xB0f'+' is '+c+'\xB0c');
+}
+
+cToF(60);
+fToC(45);
