@@ -1,0 +1,75 @@
+ This first part is an example. The problem is listed below the example.
+
+Example
+The getDay() method returns the weekday as a number between   0 and 6.
+(Sunday=0, Monday=1, Tuesday=2 ..)
+
+This example uses the weekday number to calculate the weekday name:
+
+switch (new Date().getDay()) {
+  case 0:
+         day = "Sunday";
+         break;
+  case 1:
+         day = "Monday";
+         break;
+  case 2:
+         day = "Tuesday";
+         break;
+  case 3:
+         day = "Wednesday";
+         break;
+  case 4:
+         day = "Thursday";
+         break;
+  case 5:
+         day = "Friday";
+         break;
+  case 6:
+         day = "Saturday";
+
+         break;
+ }   
+
+The result of day will be:
+
+Monday  
+
+
+ The default keyword inside the switch specifies the code to run if there is no  case match: 
+
+ default: 
+         text = "Looking forward to the Weekend"; 
+
+
+Problem
+Finish the switch statement. Add the following cases: BMW, Ford and Peugeot. 
+Set the value of the variable text to: "German car" for BMW. "American car" for Ford. "French car" for  Peugeot. 
+Also add a default case where the text value is "Unknown car name". 
+
+
+
+function checkCar() {
+  var text;
+  var favCar = prompt("input a car");
+
+  switch(favCar) {
+    case "BMW":
+          car = 'German Car';
+          break;
+    case "Ford":
+          car = 'American Car';
+          break;
+    case "Peugot":
+          car = 'French Car';
+          break;
+    default:
+          car = "Unkown car name";
+          break;
+  
+  }
+  return car
+}
+
+checkCar()
+
